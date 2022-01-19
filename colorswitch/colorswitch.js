@@ -2,7 +2,7 @@ let colours = ['darkgreen','maroon','darkgrey']
 
 let button = document.getElementById('colours');
 
-/*
+
 button.addEventListener('click',function()
 	{
 		var random = colours[Math.floor(Math.random()*colours.length)]
@@ -10,10 +10,18 @@ button.addEventListener('click',function()
 		section.style.background = random;
 	}
 )
-*/
+
 function changecolour()
 {
-	let colors = document.getElementById('colourInput').value;
-	document.body.style.backgroundColor = colors
+    let colors = document.getElementById('colourInput').value;
+    document.body.style.backgroundColor = colors
 }
 
+if (colors.value = null)
+{
+    button.click()
+}
+else
+{
+    changecolour();
+} 
