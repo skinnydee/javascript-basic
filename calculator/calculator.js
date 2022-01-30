@@ -5,19 +5,13 @@ function display()
 	result.value = value;
 }
 
-let button = document.getElementsByClassName('num');
+let button = document.getElementById('add');
 
-console.log(button[0].innerHTML);
+button.addEventListener('click',display())
 
-/*
-for (var i = 0; i < button.length; i++)
+function display()
 {
-
-    button[i].addEventListener('click',function()
-	{
-	    let result = button[i.innerHTML;
-	    console.log(result);
-	}
-    )
+    result = document.getElementById('result');
+    result.value = button.innerText;
 }
-*/
+
