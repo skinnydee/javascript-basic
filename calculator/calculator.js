@@ -5,11 +5,18 @@ function display()
 	result.value = value;
 }
 
-let button = document.getElementById('num2');
+let button = document.getElementsByClassName('num');
 
-button.addEventListener('click',function()
+
+for (var i = 0; i < button.length; i++)
+{
+
+    button[i].addEventListener('click',function()
 	{
-		let result = document.getElementById('result');
-		result.value = button.value
+	    let result = button[i];
+	    let result = button[i].innerHTML;
+	    console.log(result);
 	}
-)
+    )
+}
+
